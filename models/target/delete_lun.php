@@ -1,17 +1,25 @@
 <?php
+/**
+ * Documentation for the delete_lun() function
+ *
+ * 07.10.2015
+ * Added
+ *
+ */
+
 use phpietadmin\app\models\target;
 
 // require the class
-require_once __DIR__ . '/../../app/models/autoloader.php';
+require_once __DIR__ . '/../registry.php';
 
 // Create object
 // if iqn doesn't exist, it will be created
-$target = new target\Target('iqn.2014-12.com.example.iscsi:test2');
+$target = new target\Target('iqn.2014-12.com.example.iscsi:test1');
 
 // @param string $path path to the block device
-$target->detach_lun('/dev/VG_data01/test7', true);
+$target->detach_lun('/dev/VG_data01/test2', true);
 
-print_r($target->get_action_result());
+print_r($target->logging->get_action_result());
 
 // example output failure
 /*

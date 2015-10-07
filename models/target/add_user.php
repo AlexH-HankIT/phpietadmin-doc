@@ -1,6 +1,6 @@
 <?php
 /**
- * Documentation for the add_lun() function
+ * Documentation for the add_user() function
  *
  * 07.10.2015
  * Added

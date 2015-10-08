@@ -1,14 +1,19 @@
 <?php
+/**
+ * Documentation for the return_target_data() function
+ *
+ * 08.10.2015
+ * Added
+ *
+ */
+
 use phpietadmin\app\models\target;
 
-// ToDo: Insert session examples
-
 // require the class
-require_once __DIR__ . '/../../autoloader.php';
+require_once __DIR__ . '/../registry.php';
 
 // Create object
-// if iqn doesn't exist, it will be created
-$target = new target\Target('iqn.2014-12.com.example.iscsi:test2');
+$target = new target\Target('iqn.2014-12.com.example.iscsi:test1');
 
 // the get_target_data() function is nerver called directly from outside the class
 // the constructor will gather all available data and expose them via the return_target_data() method
@@ -21,7 +26,7 @@ Array
 (
     [index] => 0
     [tid] => 6
-    [iqn] => iqn.2014-12.com.example.iscsi:test2
+    [iqn] => iqn.2014-12.com.example.iscsi:test1
     [count_options] => 0
 )
 */
@@ -32,7 +37,7 @@ Array
 (
     [index] => 0
     [tid] => 6
-    [iqn] => iqn.2014-12.com.example.iscsi:test2
+    [iqn] => iqn.2014-12.com.example.iscsi:test1
     [count_options] => 1
     [lun] => Array
         (
@@ -58,7 +63,7 @@ Array
 (
     [index] => 0
     [tid] => 2
-    [iqn] => iqn.2014-12.com.example.iscsi:test2
+    [iqn] => iqn.2014-12.com.example.iscsi:test1
     [count_options] => 0
     [session] => Array
         (

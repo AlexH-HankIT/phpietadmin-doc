@@ -1,15 +1,22 @@
 <?php
+/**
+ * Documentation for the return_all_used_lun() function
+ *
+ * 08.10.2015
+ * Added
+ *
+ */
+
 use phpietadmin\app\models\target;
 use phpietadmin\app\models\lvm\lv;
 
 // no error handling via logging function get_action_result() included!
 
 // require the class
-require_once __DIR__ . '/../../autoloader.php';
+require_once __DIR__ . '/../registry.php';
 
 // Create object
-// if iqn doesn't exist, it will be created
-$target = new target\Target('iqn.2014-12.com.example.iscsi:test2');
+$target = new target\Target('iqn.2014-12.com.example.iscsi:test1');
 
 // call function
 $data = $target->return_all_used_lun();

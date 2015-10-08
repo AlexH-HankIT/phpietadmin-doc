@@ -13,7 +13,6 @@ use phpietadmin\app\models\target;
 require_once __DIR__ . '/../registry.php';
 
 // Create object
-// if iqn doesn't exist, it will be created
 $target = new target\Target('iqn.2014-12.com.example.iscsi:test1');
 
 // param1: true/false disconnect initiators ("force" option)

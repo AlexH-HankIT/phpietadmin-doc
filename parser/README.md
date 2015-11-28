@@ -1,1 +1,0 @@
-This directory contains the parsing functions in an early development state. The functions used in phpietadmin are implemented object orientated.

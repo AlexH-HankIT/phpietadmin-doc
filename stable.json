@@ -3,6 +3,8 @@
     {"name": "phpietadmin-gui"},
     {"version_nr": "0.6.1"},
     {"downloadurl": "https://github.com/HankIT/phpietadmin-gui/archive/v0.6.1.tar.gz"},
+    {"update": "https://link/to/update/instructions"},
+    {"new": "https://link/to/new/installation/instructions"},
     {"release": "stable"}
   ]
 }

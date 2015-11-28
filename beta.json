@@ -2,7 +2,7 @@
   "version": [
     {"name": "phpietadmin-gui"},
     {"version_nr": "0.6.2"},
-    {"downloadurl": "https://github.com/HankIT/phpietadmin-gui/archive/v0.6.2.tar.gz"},
+    {"downloadurl": "https://github.com/HankIT/phpietadmin-gui/releases/download/v0.6.2/phpietadmin-gui-0.6.2.tar.gz"},
     {"release": "beta"}
   ]
 }

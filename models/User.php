@@ -5,6 +5,6 @@ require_once __DIR__ . '/registry.php';
 
 $user = new models\User('admin');
 
-$user->add('Aichach78');
+$user->add('password');
 
 print_r($user->logging->get_action_result());
